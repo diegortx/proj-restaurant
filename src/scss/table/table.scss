@@ -1,0 +1,145 @@
+@import "../colors";
+
+.body {
+    animation-duration: 3s;
+    animation-name: blur_body;
+}
+
+@keyframes blur_body {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+span {
+    animation-duration: 3s;
+    animation-name: blur_span;
+}
+
+@keyframes blur_span {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.body {
+    width: 150px;
+    height: 150px;
+    background: $light_color;
+    border-radius: 100px;
+    border: solid 2px $dark_color;
+    box-shadow: 3px 3px 3px 3px $background_color;
+    margin: 20px;
+    margin-bottom: 30px;
+
+    .center {
+        padding-bottom: 10px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .hours {
+            font-size: 12px;
+        }
+
+        .table {
+            font-size: 12px;
+        }
+
+        .price {
+            font-weight: bold;
+        }
+    }
+
+    .add,
+    .pay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        border: solid 2px $dark_color;
+        border-radius: 50px;
+        z-index: 1;
+        font-weight: bold;
+
+    }
+
+    .add:hover,
+    .pay:hover {
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        background-color: $primary_color;
+        transition: all 0.5s;
+        color: $light_color;
+    }
+
+    .add {
+        margin-left: 55px;
+        margin-top: -35px;
+        background: $background_color;
+    }
+
+    .pay {
+        margin-left: 115px;
+        margin-top: -65px;
+        background: $light_color;
+    }
+}
+
+@media (max-width: 480px) {
+    .body {
+        width: 250px;
+        height: 100px;
+
+        .center {
+            margin-top: -10px;
+        }
+
+        .add {
+            margin-left: 220px;
+            margin-top: -100px;
+            background: $background_color;
+        }
+
+        .pay {
+            margin-left: 220px;
+            margin-top: -150px;
+            background: $light_color;
+        }
+
+    }
+}
+
+@keyframes body {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    30% {
+        top: 50px;
+    }
+
+    68%,
+    72% {
+        left: 50px;
+    }
+
+    100% {
+        top: 100px;
+        left: 100%;
+    }
+}

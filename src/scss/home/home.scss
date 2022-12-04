@@ -1,0 +1,14 @@
+.main {
+  width: 70vw;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 480px) {
+  .main {
+    width: 90vw;
+
+  }
+}

@@ -1,0 +1,135 @@
+@import "../colors";
+
+table {
+    padding: 10px;
+}
+
+th {
+    width: 100px;
+}
+
+hr {
+    border-style: dotted;
+}
+
+.main {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 50vw;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px $dark_color;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px $dark_color;
+    padding: 20px;
+
+    .body-card {
+        width: 100vw;
+    }
+
+
+    .title-card,
+    .buttom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttom {
+        margin-top: 30px;
+    }
+
+    .cancel,
+    .pay,
+    .close {
+        border: solid 2px $dark_color;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .pay,
+    .close {
+        background-color: $primary_color;
+        color: $light_color;
+        font-weight: bold;
+    }
+
+    .pay,
+    .close {
+        margin-left: 30px;
+    }
+
+    .cancel:hover,
+    .pay:hover,
+    .close:hover {
+        cursor: pointer;
+    }
+
+    .checkout-footer {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .checkout {
+        margin-top: 10px;
+        text-align: center;
+        background: $background_color;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+    }
+
+    .table {
+        font-weight: bold;
+    }
+
+    .ch-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        text-align: end;
+        padding: 10px;
+    }
+
+    .ch-3 {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .ch-3-2,.ch-convert {
+        justify-content: end;
+        text-align: end;
+    }
+
+    .ch-pay {
+        width: 80px;
+        height: 20px;
+        font-size: 18px;
+    }
+    .ch-convert{
+        font-size: 12px;
+    }
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+@media (max-width: 480px) {
+    .main{
+        width: 85vw;
+        font-size: 12px;
+    }
+}

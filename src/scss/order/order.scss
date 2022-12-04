@@ -1,0 +1,140 @@
+@import "../colors";
+
+.main {
+    margin-top: 30px;
+    width: 50vw;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px $dark_color;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 1px 1px 1px 1px $dark_color;
+    margin-bottom: 30px;
+
+
+    .hr-2 {
+        color: $background_color;
+    }
+
+    .body-card {
+        width: 100vw;
+
+        .title-card,
+        .buttom {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .buttom {
+            margin-top: 30px;
+        }
+
+        .cancel,
+        .apply {
+            border: solid 2px $dark_color;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .apply {
+            margin-left: 30px;
+            background-color: $primary_color;
+            color: $light_color;
+            font-weight: bold;
+        }
+
+        .cancel:hover,
+        .apply:hover {
+            cursor: pointer;
+        }
+
+        .menu-1-0 {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .menu-1-1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            font-size: 12px;
+            padding: 5px;
+        }
+
+        .menu-1-1-3 {
+
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .menu-1-1-3-sum,
+        .menu-1-1-3-sub {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: solid 2px $dark_color;
+            border-radius: 50px;
+            background: $light_color;
+        }
+
+        .menu-1-1-3-sum:disabled,
+        .menu-1-1-3-sub:disabled {
+            background: $background_color;
+            opacity: 0.3;
+        }
+
+        .menu-1-1-3-sum:hover,
+        .menu-1-1-3-sub:hover {
+            cursor: pointer;
+            background-color: $primary_color;
+            color: $light_color;
+            font-weight: bold;
+        }
+
+        .menu-1-1-3-num {
+            width: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+        }
+
+        .menu-footer {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        table {
+            width: 50vw;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+
+}
+
+
+@media (max-width: 480px) {
+    .main {
+        width: 80vw;
+    }
+
+    table {
+        width: 80vw !important;
+        font-size: 12px;
+    }
+
+    .menu-1-1 {
+        padding: 15px;
+    }
+}
