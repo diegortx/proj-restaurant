@@ -1,5 +1,5 @@
-###Projeto Restaurante
+#Projeto Restaurante
 
-###To local run
+#To local run
 - npm install
 - npm run serve
